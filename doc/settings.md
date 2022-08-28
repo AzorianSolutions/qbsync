@@ -97,7 +97,7 @@ The number of records to return in a single request batch when downloading all i
 
 ### - export
 
-    path: String
+    path: String (default: var/export)
 
 The absolute or relative (to the project root) directory path where file based data exports should be saved. 
 
