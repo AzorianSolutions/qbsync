@@ -49,7 +49,7 @@ environments. Assuming you have both Git and Python already installed, execute t
 The default configuration is not ready to go out of the box. The default configuration is set to use "192.168.1.10" as
 the hostname of the application. If this isn't updated before running the application, the resulting configuration
 templates that generated will be wrong and cause the application to break. The port must also be configured to match
-the configured port of the quickbooks server. Unless you have a reverse proxy to funnel traffic through, the protocol
+the configured port of the SOAP server. Unless you have a reverse proxy to funnel traffic through, the protocol
 must remain as http as no SSL/TLS support is available in QBSync as this time.
 
 Being that this application is designed for Linux environments but the Quickbooks Web Connector must run on Windows,
