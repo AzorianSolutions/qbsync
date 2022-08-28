@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<QBWCXML>
+    <AppName>{{ data.name }}</AppName>
+    <AppID>{{ data.id }}</AppID>
+    <AppURL>{{ data.protocol }}://{{ data.host }}:{{ data.port }}/qbwc</AppURL>
+    <AppDescription>Automated Quickbooks data exporting to various text formats and SQL databases.</AppDescription>
+    <AppSupport>{{ data.support_url }}</AppSupport>
+    <UserName>{{ data.user }}</UserName>
+    <OwnerID>{{ '{' }}{{ data.owner_id }}{{ '}' }}</OwnerID>
+    <FileID>{{ '{' }}{{ data.file_id }}{{ '}' }}</FileID>
+    <QBType>QBFS</QBType>
+    <Scheduler>
+        <RunEveryNMinutes>{{ data.run_interval }}</RunEveryNMinutes>
+    </Scheduler>
+</QBWCXML>

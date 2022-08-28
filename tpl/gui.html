@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>QBSync - Azorian Solutions</title>
+    <style type="text/css">
+        h1 { margin-bottom: 5px; font-size: 3em; }
+        .subtitle { font-size: .9em; }
+        .subtitle a { color: blue; }
+    </style>
+</head>
+<body>
+<h1>QBSync</h1>
+<span class="subtitle">by <a href="https://azorian.solutions" target="_blank">Azorian Solutions</a></span>
+<p>QBSync is a Quickbooks Web Connector data exporter that saves various types of application data to multiple text formats.</p>
+<h3>Actions</h3>
+<ul>
+    <li><a href="/qbwc/download-customers">Download Customers</a></li>
+    <li><a href="/qbwc/download-invoices">Download Invoices</a></li>
+    <li><a href="/qbwc/download-all">Download All Data</a></li>
+</ul>
+{%  if data %}
+<p>Response: {{ data }}</p>
+{% endif %}
+<h3>Quickbooks Web Connector User Configurations</h3>
+<p>Here you may download the appropriate QBWC service file (QWC) for the user you wish to connect to QBSync.</p>
+<ul>
+    {%- for user in users %}
+    <li><a href="/qbwc/download-qwc/{{ user }}">{{ user }}</a></li>
+    {%  endfor %}
+    {% if not users|length %}
+        <li>There are currently no QBSync users setup.</li>
+    {% endif %}
+</ul>
+</body>
+</html>

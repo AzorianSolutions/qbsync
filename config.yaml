@@ -1,0 +1,48 @@
+defaults:
+  app:
+    id: 8b3706f7-fb12-448f-aa3f-3ac17d28f324
+    name: AzorianSolutions_QBSync_V1
+    version: 1.0.0
+    protocol: http
+    host: 192.168.1.10
+    port: 8081
+    support_url: https://azorian.solutions
+    run_interval: 1
+  auth:
+    salt: GVNfqZPVrjNQJbnhDyGS5bA2bCLdfZEVZ7KEWAZhG7yNCueeEEJVkauPXaL3WXewqQJ2NqETJQA3NGSZaJKZT27Xihrjbq4JFiic
+    iterations: 10000
+    users_path: users.yaml
+  servers:
+    http:
+      host: 0.0.0.0
+      port: 8080
+      debug: false
+    soap:
+      host: 0.0.0.0
+      port: 8081
+  api:
+    customers:
+      download:
+        page_size: 500
+    invoices:
+      download:
+        page_size: 500
+  export:
+    path: var/export
+    types:
+      customers:
+        - format: json
+          name: customers.json
+        - format: yaml
+          name: customers.yaml
+      invoices:
+        - format: json
+          name: invoices.json
+        - format: yaml
+          name: invoices.yaml
+  quickbooks:
+    company_file_path: C:\Company File.QBW
+  templates:
+    path: tpl
+    error: error.html
+    qbwc: qbsync.qwc
