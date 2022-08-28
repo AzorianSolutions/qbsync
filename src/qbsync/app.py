@@ -122,10 +122,10 @@ class QBSyncApp:
         from spyne.protocol.soap import Soap11
         from spyne.server.wsgi import WsgiApplication
         from wsgiref.simple_server import make_server
-        from src.qbsync.services.quickbooks import QuickbooksService
+        from src.qbsync.services.soap import SoapService
         conf = self.config['defaults']['servers']['soap']
 
-        spyne_app = Application([QuickbooksService], 'http://developer.intuit.com/',
+        spyne_app = Application([SoapService], 'http://developer.intuit.com/',
                                 in_protocol=Soap11(validator='lxml'),
                                 out_protocol=Soap11())
 

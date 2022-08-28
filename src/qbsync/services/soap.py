@@ -9,7 +9,7 @@ app = Flask(__name__)
 spyne = Spyne(app)
 
 
-class QuickbooksService(ServiceBase):
+class SoapService(ServiceBase):
     __target_namespace__ = 'http://developer.intuit.com/'
     __service_url_path__ = '/qbwc'
     __in_protocol__ = Soap11(validator='lxml')
