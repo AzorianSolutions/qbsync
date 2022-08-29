@@ -5,6 +5,7 @@ from src.qbsync.mutables.customer_address import CustomerAddressMutable
 class CustomerMutable(MutableBase):
     id: str or None = None
     parent_id: str or None = None
+    price_level_id: str or None = None
     org_name: str or None = None
     full_name: str or None = None
     salutation: str or None = None
@@ -26,6 +27,7 @@ class CustomerMutable(MutableBase):
     _data_map: dict = {
         'ListID': 'id',
         'ParentRef': 'parent_id',
+        'PriceLevelRef': 'price_level_id',
         'CompanyName': 'org_name',
         'FullName': 'full_name',
         'Salutation': 'salutation',
