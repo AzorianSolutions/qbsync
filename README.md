@@ -18,15 +18,13 @@ contact me.
 
 - **Maintained by:** [Matt Scott](https://github.com/AzorianSolutions)
 - **Website:** [https://azorian.solutions](https://azorian.solutions)
-- **Current Version:** 1.0.0
-- **Github:** [https://github.com/AzorianSolutions/as-apps-qbsync](https://github.com/AzorianSolutions/as-apps-qbsync)
-- **Project Home:** [https://gitlab.azorian.solutions/as-apps/qbsync](https://gitlab.azorian.solutions/as-apps/qbsync)
-- **Issues:** [https://gitlab.azorian.solutions/as-apps/qbsync/-/issues](https://gitlab.azorian.solutions/as-apps/qbsync/-/issues)
+- **Current Version:** 0.1.0
+- **Github:** [https://github.com/AzorianSolutions/qbsync](https://github.com/AzorianSolutions/as-apps-qbsync)
 
 ## TL;DR
 
-    git clone https://github.com/AzorianSolutions/as-apps-qbsync.git
-    cd as-apps-qbsync
+    git clone https://github.com/AzorianSolutions/qbsync.git
+    cd qbsync
     python ./run.py
 
 ## Deploying this application
