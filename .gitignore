@@ -2,4 +2,6 @@ __*
 var/export/*.csv
 var/export/*.json
 var/export/*.yaml
+.idea
 venv
+*.egg-info

@@ -39,8 +39,8 @@ IPv4 communications with. Many Linux flavors come with Python already installed 
 [desktop](https://ubuntu.com/download/desktop) and [server](https://ubuntu.com/download/server)
 environments. Assuming you have both Git and Python already installed, execute the following commands;
 
-    git clone https://github.com/AzorianSolutions/as-apps-qbsync.git
-    cd as-apps-qbsync
+    git clone https://github.com/AzorianSolutions/qbsync.git
+    cd qbsync
     pip install -r requirements.txt
     chmod +x admin.py run.py
 
