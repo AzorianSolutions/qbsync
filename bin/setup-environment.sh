@@ -36,5 +36,3 @@ pip install --editable .
 echo ""
 echo "The environment is ready to run the application!"
 echo ""
-echo "Please run the \"powertran\" command to get started."
-echo ""
