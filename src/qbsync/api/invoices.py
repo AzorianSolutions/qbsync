@@ -151,10 +151,10 @@ class InvoiceApi(BaseApi):
         # drf_macro.text = str('LastMonth')
 
         drf_from = etree.SubElement(drf, 'FromTxnDate')
-        drf_from.text = str('2022-07-01')
+        drf_from.text = str('2023-01-01')
 
         drf_to = etree.SubElement(drf, 'ToTxnDate')
-        drf_to.text = str('2022-07-01')
+        drf_to.text = str('2023-01-01')
 
         # Add flag to include invoice line items in response
         ili = etree.SubElement(irq, 'IncludeLineItems')
